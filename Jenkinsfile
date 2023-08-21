@@ -13,8 +13,8 @@ pipeline {
                  }
                  stage('Three') {
                  when {
-                       expression {
-                            BRANCH_NAME == 'main'
+                       not {
+                            branch "master"
                        }
                  }
                  steps {

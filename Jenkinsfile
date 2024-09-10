@@ -3,6 +3,7 @@ pipeline {
          stages {
                  stage('One') {
                  steps {
+                     deleteDir()
                      echo 'Hi, this is Ameer Batcha'
                  }
                  }

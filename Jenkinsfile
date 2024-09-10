@@ -30,6 +30,7 @@ pipeline {
                            }
                            }
                             stage('Integration test') {
+                              agent any
                               steps {
                                 echo "Running the integration test..."
                               }
